@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Mark's 70's Music Trivia Game</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- USING AN ENTIRE CONTAINER FOR THE MAIN CONTENT -->
+    <div class="container">
+        <br>
+        <h2>Mark's 70's Music Trivia Game</h2>
+        <br>
+
+        <!-- Instruction div -->
+        <div id="instructdisplay">
+                <h6> You will will have 20 seconds to click your guess at what the right answer is ... before the game moves on.</h6>
+                <br>
+        </div>
+
+        <!-- DISPLAY START GAME QUESTION AND START BUTTON -->
+        <div id="startgamebuttondisplay">
+                <h4>Click to start game.</h4>
+                <button type="button" id="startbutton" class="btn btn-success">Start Game</button>
+                <br>
+        </div>
+
+        <!--A div to hold and display the time countdown and message (NEED HELP WITH MESSAGE)-->
+        <div id="timedisplay">
+                <p>placeholder for countdown timer</p>
+        </div>
+        
+        <!-- a div to hold the variably changing content question -->
+        <div id="questiondisplay">
+                <p id="currentquestiondisplay"></p>
+        </div>
+
+
+        <!--DISPLAY CANDIDATE ANSWER BUTTONS IN A div with varying button labels -->
+        <div id="candidatesdisplay">
+                <br>
+                <button id="ButtonA" type="button" data-value="0" class="btn btn-primary my-3 w-50" value="a"></button>
+                <br>
+                <button id="ButtonB" type="button" data-value="1" class="btn btn-primary my-3 w-50" value="b"></button>
+                <br>
+                <button id="ButtonC" type="button" data-value="2" class="btn btn-primary my-3 w-50" value="c"></button>
+                <br>
+                <button id="ButtonD" type="button" data-value="3" class="btn btn-primary my-3 w-50" value="d"></button>
+                <br>
+                <button id="ButtonE" type="button" data-value="4" class="btn btn-secondary my-3 w-25" value="e"></button>
+        </div>
+
+        <!-- SHOW RIGHT ANSWER TO QUESTION -->
+        <div id="rightanswerdisplay">
+                <br>
+                <p id="currentquestiondisplayagain"></p>
+                <p>answer placeholder</p>
+        </div>
+
+        <div class="musicians">
+                <img width="50%" id="BandPics" src="ELP1.jpg" alt="Musicians">
+        </div>
+
+        <!-- SHOW NEXT BUTTON -->       
+        <div id="nextbuttondisplay">
+                <button id="ButtonF" type="button" data-value="5" class="btn btn-secondary my-3 w-25" value="Next Question">Next Question</button>
+        </div>    
+        <br>
+
+        <!-- SHOW OVERALL GAME RESULTS and PLAY AGAIN BUTTON -->
+        <div id="summaryresultsdisplay">
+                <p>summary placeholder</p>
+        <div>
+
+        <!-- SHOW PLAY AGAIN BUTTON -->
+        <div id="playagainbuttondisplay">
+                <br>   
+                <button id="ButtonG" type="button" data-value="6" class="btn btn-warning my-3 w-25" value="Play New Game?">Play New Game?</button>
+        </div>
+            
+    </div>
+    
+    <script type="text/javascript" src="Trivia_GameV13.js"></script>
+
+
+
+
+</body>
+
+</html>
